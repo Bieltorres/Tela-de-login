@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Login</title>
+    <style>
+      .is-light {
+        background-color: #77fff0;
+        color: #201b2c;
+      }
+      .is-dark {
+        background-color: #201b2c;
+        color: #77ffc0;
+      }
+
+      .is-light .title1 {
+        color: #201b2c;
+      }
+
+      .is-light .card-login h1 {
+        color: #77ffc0;
+      }
+    </style>
+  </head>
+  <body class="is-dark">
+    <div class="main-login">
+      <div class="left-login">
+        <h1 class="title1">
+          Olá, programador! <br />
+          Entre para o nosso time
+        </h1>
+        <img
+          src="./img/astronaut-animate.svg"
+          alt="astronaut-animate"
+          class="left-login-image"
+        />
+      </div>
+      <div class="right-login" style="width: 50%">
+        <div class="card-login">
+          <h1>LOGIN</h1>
+          <div class="text-field">
+            <label for="user">E-mail:</label>
+            <input
+              type="text"
+              name="user"
+              id="user"
+              placeholder="digite o e-mail"
+            />
+          </div>
+          <div class="text-field">
+            <label for="password">Senha:</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="digite a senha"
+            />
+          </div>
+          <button class="btn-login">Login</button>
+          <button id="switchBtn">Mudar tema</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
