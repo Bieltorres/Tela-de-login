@@ -9,7 +9,7 @@
     <title>Login</title>
     <style>
       .is-light {
-        background-color: #77fff0;
+        background-color: #61dcce;
         color: #201b2c;
       }
       .is-dark {
@@ -23,7 +23,13 @@
 
       .is-light .card-login h1 {
         color: #77ffc0;
+        background-color: #2f2841;
       }
+
+      .is-light .card-login {
+        background-color: #2f2841;
+      }
+    
     </style>
   </head>
   <body class="is-dark">
@@ -39,13 +45,13 @@
           class="left-login-image"
         />
       </div>
-      <div class="right-login" style="width: 50%">
+      <div class="right-login"><form id="form">
         <div class="card-login">
           <h1>LOGIN</h1>
           <div class="text-field">
             <label for="user">E-mail:</label>
             <input
-              type="text"
+              type="email"
               name="user"
               id="user"
               placeholder="digite o e-mail"
@@ -60,8 +66,9 @@
               placeholder="digite a senha"
             />
           </div>
-          <button class="btn-login">Login</button>
-          <button id="switchBtn">Mudar tema</button>
+          <button type="submit" id="btn-login">Login</button></form>
+          <button id="switchBtn">Mudar tema</button> 
+       
         </div>
       </div>
     </div>
