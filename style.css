@@ -180,3 +180,9 @@ body* {
     width: 87%;
   }
 }
+
+@media (max-width: 500px) {
+  .right-login {
+    padding-right: 25px;
+  }
+}
